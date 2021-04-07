@@ -1,0 +1,458 @@
+body {
+  overflow-x: hidden;
+}
+
+.error {
+  /* color: red; */
+  background-color: white;
+  font-weight: bold;
+}
+
+#page {
+  width: 100%; 
+  height: 100%; 
+  /*
+  display: flex;
+  flex-direction: column;
+  */
+}
+
+footer {
+  border: orange medium solid;
+  padding: 0.3em;
+  margin-bottom: 0.3em;
+  background-color: #207BBD;
+  background-clip: content-box;
+  color: white;
+  width: calc(100% - 0.6em - 8px);
+  height: 40px;
+}
+
+footer p {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  display: inline-block;
+}
+
+footer p a {
+  color: white;
+}
+
+#middle {
+  width: 100%;
+  height: calc(100vh - 80px - 80px - 0.3em - 2.0em );
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+details {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding: 0.2em;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+#songs th {
+  background-color: green;
+  color: white;
+  /* overflow: scroll; */
+}
+
+h1 {
+  margin-left: 0.5em;
+}
+
+#formi {
+  width: 30em;
+  padding-left:0.5em;
+}
+
+#content {
+  margin-top: 1em;
+  border: orange medium solid;
+  background-clip: content-box;
+  padding: 0.3em; 
+  background-color: white; 
+  display: inline-block;
+  width: 21em;
+  /*width:27em;*/
+}
+
+#footer p:last-child {
+  float: right;
+}
+
+
+input[type=submit] {
+  width: 5em;
+  height: 1.5em;
+  font-size: 1.2em;
+  background-color: white;
+  color: #207BBD;
+  border: #3194DE solid thin;
+  border-radius: 0.2em;
+}
+
+table {
+  border: 1px #eae4d1 solid;
+  box-shadow: 2px 3px 3px black;
+  padding: 0.3em;
+  border-spacing: 0.3em;
+  width: 21em;
+}
+
+table tr {
+  margin: 0.3em;
+}
+
+table tr th {
+  background-color: #ffc653;
+  border: 1px #999999 solid;
+}
+
+table td {
+  border: 1px #999999 solid;
+}
+
+/*
+table td:hover {
+  background-color: pink;
+}
+*/
+
+table td p {
+  display: inline-block;
+}
+
+table td p:last-child {
+  float: right;
+  margin-right: 0.5em;
+}
+
+/*
+table td p:first-child:hover {
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
+*/
+
+/*
+table tr a {
+    text-decoration: none;
+}
+*/
+
+table td label:last-child {
+  margin-left: 0.5em;
+}
+
+#listaus ul {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#listaus ul:last-child {
+  margin-bottom: 1.0em;
+}
+
+#listaus ul li label:last-child {
+  margin-left: 0.5em;
+  color: brown;
+  font-size: 0.8em;
+}
+
+#listaus ul li label:first-child {
+  font-weight: bold;
+}
+
+#player {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; 
+  border: medium outset orange;
+  border-radius: 12px;
+  background-color: moccasin;
+  height: 80px;
+  width: calc(100% - 0.6em - 28px);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#player p {
+  width: 100%;
+  margin: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/*
+#playerSongName {
+  width: 100%;
+  margin: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+*/
+
+audio {
+  width: 100%;
+  margin: 0;
+}
+
+#taulukko {
+  padding-bottom: 0.5em;
+  padding-right: 0.0em;
+  margin-right: 0.0em;
+}
+
+#taulukko td p:first-child {
+  display: inline-block;
+  margin:0.2em;
+}
+
+#taulukko td ul {
+  visibility: collapse;
+}
+
+.biisiLkm {
+  float: right;
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  /*display: none; */
+}
+
+#api_background {
+  background-color: orange;
+  border: medium black solid;
+}
+
+.api_div {
+  background-color: white;
+  border: medium green solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+#loginBorder, #memberBorder {
+  height: 15em;
+  width:20em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: orange medium solid;
+  background-clip: content-box;
+  padding: 0.3em; 
+/*  background-color: #BDDEFF; */
+  background-color: white; 
+  
+  display: inline-block;
+  float: left;
+  clear: right;
+}
+
+#memberBorder {
+  height: auto;
+}
+
+#loginBackground , #memberBackground {
+  background-color: #BDDEFF;
+  height: 100%;
+}
+
+#memberBackground h1 {
+  background-color: #BDDEFF;
+  margin-top: 0.0em;
+  margin-bottom: 0.3em;
+}
+
+#loginForm, #memberForm {
+  background-color: #BDDEFF;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loginForm p, #memberForm p {
+  width: 90%;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 0em;
+}
+
+#loginForm label{
+  display: inline-block;
+  background-color: white;
+  vertical-align: center;
+  width: 95%;
+  padding-bottom: 1.0em;
+  padding-left: 1.0em;
+  box-shadow: 3px 5px 5px grey;
+  margin-bottom: 0.5em;
+}
+#loginForm p:last-child {
+  display: inline-block;
+}
+
+#loginForm p label:first-child {
+  display: inline-block;
+}
+
+#loginForm p label:last-child{
+  display: inline-block;
+  vertical-align: bottom;
+/*  background-color: transparent; */
+/*  margin-left: 1.0em; */
+}
+
+#loginButton {
+  color: white;
+  background-color: #3194DE;
+  width: 8em;
+  height: 2em;
+  font-size: 1.0em;
+  display: block;
+}
+
+#loginForm p label:first-child input {
+  display: block;
+}
+
+#closeButton {
+  width: 2em;
+  float: right;
+  position: relative;
+  top: -3.7em;
+  left: 0em;
+}
+
+.memberBlock {
+  display: block;
+  background-color: BlanchedAlmond;
+}
+
+.memberLabel {
+  diplay: inline-block;
+  width: 30%;
+  font-size: 1.0em;
+}
+
+.memberLabel select {
+  diplay: inline-block;
+  width: 60%;
+  color: black;
+/*  background-color: orange; */
+}
+
+.deleteMemberButton, .addInstrumentButton {
+  border: 0;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  background-size: 100%;
+}
+
+.deleteMemberButton img, .addInstrumentButton img{
+  width: 1em;
+  height: 1em;
+}
+
+.memberBlock {
+  border: orange solid thin;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#errorPanel, #successPanel {
+  width: 20em;
+  display: inline-block;
+  border: red solid medium;
+  float: left;
+  clear: right;
+  margin-right: 1em;
+}
+
+#successPanel {
+  border: green solid medium;
+}
+
+#errorPanel textarea, #successPanel textarea {
+  width: 85%;
+  resize: none; 
+  padding: 0;
+  margin: 0;
+}
+
+#errorPanel button, #successPanel button{
+  border: 0;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  background-size: 100%;
+  position: relative;
+  top: 0em;
+  left: 0em;
+  float: right;
+  margin: 0.5em;
+}
+
+#errorPanel button img, #successPanel button img{
+  width: 2em;
+  height: 2em;
+}
+
+.concertName {
+  float: left;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+.olSong {
+  list-style: none;
+  counter-reset: song_counter;
+}
+
+.olSong li {
+  counter-increment: song_counter;
+  padding: 0.2em;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  margin-right: 1.0em;
+  border: solid 5px white;
+  transition: border-color 0.6s linear;
+}
+
+.olSong li:hover {
+  color: crimson;
+  border-color: orange;
+}
+
+.olSong li:before {
+  content: counter(song_counter) ". ";
+  font-weight: bold;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+input[type="file"]:invalid {
+  visibility: visible;
+}

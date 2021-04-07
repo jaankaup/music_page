@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="StyleSheet" href="styles.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>Music page</title>
+</head>
+<body>
+  <h1>API for https://jaankaup1.ties478.website/Task3/webapi/</h1>
+  <div id="api_background">
+    <div class="api_div">
+      <p><strong>concerts</strong></p>
+      <p>Methods:</p>
+      <p>GET: lists all concerts in JSON format.</p> 
+      <p>POST: not supported.</p> 
+      <p>PUT: Add a new concert. Query-params: date,name,members. Supported only by admin.</p> 
+      <p>DELETE: not supported.</p> 
+    </div>
+    <div class="api_div">
+      <p><strong>concerts/{integer}</strong></p>
+      <p>Methods:</p>
+      <p>GET: get a specific concert in JSON format.</p> 
+      <p>POST: modify a specific concert. Use JSON format.</p> 
+      <p>PUT: not supported.</p> 
+      <p>DELETE: delete a specific concert.</p> 
+    </div>
+    <div class="api_div">
+      <p><strong>concerts/{integer}/members</strong></p>
+      <p>Methods:</p>
+      <p>GET: get all players and instruments related to a specific concert in JSON format.</p> 
+      <p>POST: modify a specific concert. Use JSON format.</p>
+      <p>PUT: not supported.</p>
+      <p>DELETE: delete a specific concert (admin).</p>
+    </div>
+    <div class="api_div">
+      <p><strong>members</strong></p>
+      <p>Methods:</p>
+      <p>GET: get all available members in JSON format.</p> 
+      <p>POST: not supported.</p>
+      <p>PUT: Add a new member. query params: name={string}</p>
+      <p>DELETE: not supported.</p>
+    </div>
+    <div class="api_div">
+      <p><strong>members/{integer}</strong></p>
+      <p>Methods:</p>
+      <p>GET: get a specific members in JSON format.</p> 
+      <p>POST: modify member (admin): name={string], password={string}.</p>
+      <p>PUT: now implemented.</p>
+      <p>DELETE: delete a specific member (admin).</p>
+    </div>
+    <div class="api_div">
+      <p><strong>songs</strong></p>
+      <p>Methods:</p>
+      <p>GET: get all available songs in JSON format. Query params: name='a song name', userId={integer} are used as a filters.</p> 
+      <p>POST: not supported.</p>
+      <p>PUT: Add a new song. query params: name={string},concertId={integer}</p>
+      <p>DELETE: not supported.</p>
+    </div>
+    <div class="api_div">
+      <p><strong>songs/{integer}</strong></p>
+      <p>Methods:</p>
+      <p>GET: get a specific song in JSON format.</p> 
+      <p>POST: modify a specific song. Only supported by admin.</p>
+      <p>PUT: not supported.</p>
+      <p>DELETE: delete a specific song. Only supported by admin.</p>
+    </div>
+    <div class="api_div">
+      <p><strong>songs/{integer}/file</strong></p>
+      <p>Methods:</p>
+      <p>GET: get the song file in mp3-format.</p> 
+      <p>POST: now implemented.</p>
+      <p>PUT: add a new mp3 file, maximum file size is 30M (admin).</p>
+      <p>DELETE: delete a specific song file (admin).</p>
+    </div>
+    <div class="api_div">
+      <p><strong>login</strong></p>
+      <p>Methods:</p>
+      <p>GET: get the login information.</p> 
+      <p>POST: login. query params: name={string},password={string}.</p>
+      <p>PUT: not supported.</p>
+      <p>DELETE: not supported.</p>
+    </div>
+  </div>
+</body>
+</html>
